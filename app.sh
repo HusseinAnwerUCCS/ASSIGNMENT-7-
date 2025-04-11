@@ -16,5 +16,6 @@ sed -i 's/nginx/nginx (pronounced as engineX)/g' /var/www/html/index.nginx-debia
 echo "restarting, wait a moment....."
 service nginx restart
 echo "restarted!! "
+tail -f /dev/null
 
 
