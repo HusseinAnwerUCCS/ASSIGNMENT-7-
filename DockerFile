@@ -1,0 +1,12 @@
+#Hussein Anwer
+# 4/10/2025
+#20.04 is the msot common and the one ive seen used most especially on youtube
+# ubunto latest works aswell and simpler in some cases.
+FROM ubuntu:20.04
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt update && apt install -y nginx vim
+#put into container, + x for executable, then run it
+COPY app.sh /app.sh
+RUN chmod +x /app.sh
+EXPOSE 80
+CMD ["/app.sh"]
