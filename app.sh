@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!bin/bash
 #Hussein Anwer
 #Date:2025/4/10
 # should be downloaded on the dockerfile already first or it will be wrong/crash since
@@ -13,5 +13,8 @@ echo "welcome to (replacement)"
 sed -i 's/Welcome to nginx/Welcome to Husseins page/' /var/www/html/index.nginx-debian.html
 echo " nginx >> ngnx is pronounced as engineX"
 sed -i 's/nginx/nginx (pronounced as engineX)/g' /var/www/html/index.nginx-debian.html
-echo
+echo "restarting, wait a moment....."
+service nginx restart
+echo "restarted!! "
+
 
