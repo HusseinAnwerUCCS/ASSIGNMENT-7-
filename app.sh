@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 #Hussein Anwer
 #Date:2025/4/10
 # should be downloaded on the dockerfile already first or it will be wrong/crash since
